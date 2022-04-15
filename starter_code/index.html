@@ -17,7 +17,8 @@
   </head>
 
   <body>
-    <nav>
+    <section id="nav_bar">
+     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
       <ul>
         <li>Why Slack?</li>
@@ -25,9 +26,9 @@
         <li>About Us</li>
         <li>Your Workspaces</li>
       </ul>
-    </nav>
+     </nav>
+    </section>
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -35,8 +36,9 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      <button class="get-started-btn br-20" type="button" name="button">GET STARTED</button>
+      <p class = "signin">Already using Slack? <a href="#">Sign in</a></p>
+      <img class="image_container signin_image" src="./images/home_talking.png" alt="home_work_happening" />
     </header>
     <main>
       <div>
@@ -45,41 +47,44 @@
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+        <button class="discover br-20">DISCOVER WHY</button>
+        <div class="image_container">
+        <img class="client_logo" src="./images/airbnb-logo.png" alt="airbnb-logo" />
+        <img class="client_logo" src="./images/capital-one-logo.png" alt="capital-one-logo" />
+        <img class="client_logo" src="./images/harvard-logo.png" alt="harvard-logo" />
+        <img class="client_logo" src="./images/los-angeles-times-logo.png" alt="los-angeles-times-logo" />
+        <img class="client_logo" src="./images/oracle-logo.png" alt="oracle-logo" />
+        <img class="client_logo" src="./images/ticketmaster-logo.png" alt="ticketmaster-logo" />
+      </div>
       </div>
       <div>
         <p>Try it for free</p>
         <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+        <button class="get-started-btn br-20" type="button" name="button">GET STARTED</button>
       </div>
     </main>
     <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
-        <ul>
-          <li>COMPANY</li>
+      <div class="topfooter">
+        <img class="footer_logo" src="./images/iso-slack.png" alt="Slack solo logo" />
+        <div class="footer_links">
+        <ul class="footer_list">
+          <li class="footersubtitle">COMPANY</li>
           <li>About Us</li>
           <li>Careers</li>
           <li>Blog</li>
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
-        <ul>
-          <li>PRODUCT</li>
+        <ul class="footer_list">
+          <li class="footersubtitle">PRODUCT</li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
           <li>Customer Stories</li>
           <li>Pricing</li>
           <li>Security</li>
         </ul>
-        <ul>
-          <li>RESOURCES</li>
+        <ul class="footer_list">
+          <li class="footersubtitle">RESOURCES</li>
           <li>Download</li>
           <li>Help Center</li>
           <li>Guides</li>
@@ -87,29 +92,38 @@
           <li>App Directory</li>
           <li>API</li>
         </ul>
-        <ul>
-          <li>EXTRAS</li>
+        <ul class="footer_list">
+          <li class="footersubtitle">EXTRAS</li>
           <li>Podcast</li>
           <li>Slack Shop</li>
           <li>Slack at Work</li>
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
-        <ul>
+      </div>
+
+      <section id="subfooter">
+      <div class="subfooter_terms">
+        <ul class="subfooter_list">
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+      </div>
+        <div class="subfooter_social">
+          <div class="language">
+           <img class="subfooter_flag" src="./images/us-flag.png" alt="USA flag" />
+           <span>English (US)</span>
+           <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="subfooter_social_logos">
+           <i class="fab fa-twitter"></i>
+           <i class="fab fa-facebook-f"></i>
+           <i class="fab fa-youtube"></i>
+          </div>
         </div>
       </div>
+     </section>
     </footer>
   </body>
 </html>
