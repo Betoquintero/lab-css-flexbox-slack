@@ -17,7 +17,7 @@ nav grey: #5b5e6d;
     display: flex;
     justify-content: space-between;
     top: 0;
-    z-index: 5; /*REVISAR*/
+    z-index: 50; /*REVISAR*/
     color: #5b5e6d;
     background-color: white;
     position: sticky;
@@ -86,6 +86,12 @@ p {
     max-width: 90%;
   } 
 
+  .header_image {
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+
   main {
     background-color: #f4f3f4;
     text-align: center;
@@ -105,13 +111,34 @@ p {
      display: flex;
      flex-direction: column;
      align-items: center;
-
+     justify-content: space-evenly;
+     height: 25em;
    }
 
-   .client_logo {
-     max-width: 50%;
-     padding: 20px;
+   .airbnb_logo {
+     height: 2.5em;
    }
+
+   .capital_one_logo {
+     height: 3em;
+   }
+
+   .harvard_logo {
+     height: 2.6em;
+   }
+
+   .la_logo {
+     height: 1.8em;
+   }
+
+   .oracle_logo {
+     height: 1.1em;
+   }
+
+   .ticketmaster_logo{
+     height: 1.5em;
+   }
+
 
    .topfooter {
      background-color: white;
@@ -121,14 +148,14 @@ p {
      max-height: 100px;
    }
 
-   .footer_links {
-     display: flex;
-     justify-content: space-between;
-     align-items: baseline;          
+   .footer_links {    
+    display: flex;
+    flex-wrap: wrap;        
    }
 
    .footer_list {
      list-style: none;
+     width: 50%;
    }
 
    .footersubtitle {
